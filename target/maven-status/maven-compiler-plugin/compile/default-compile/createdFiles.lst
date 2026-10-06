@@ -1,0 +1,9 @@
+com\mycompany\entidades\modelo\Persona.class
+com\mycompany\entidades\dao\UsuarioDAO.class
+com\mycompany\entidades\JPAUtil.class
+com\mycompany\entidades\ConsultaServlet.class
+com\mycompany\entidades\dao\DomicilioDAO.class
+com\mycompany\entidades\Entidades.class
+com\mycompany\entidades\modelo\Usuario.class
+com\mycompany\entidades\dao\PersonaDAO.class
+com\mycompany\entidades\modelo\Domicilio.class
