@@ -1,6 +1,6 @@
 ## alumnos 
-Baustista Sanchez Victor Manuel
-De la Cruz Trinidad Candido Enrique
+* Baustista Sanchez Victor Manuel
+* De la Cruz Trinidad Candido Enrique
 # Sistema de Gestión de Usuarios (JPA + JSP + MySQL)
 --
 ## 🚀 Descripción del Proyecto
