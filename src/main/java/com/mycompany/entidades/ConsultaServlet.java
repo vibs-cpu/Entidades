@@ -31,39 +31,104 @@ public class ConsultaServlet extends HttpServlet {
         response.getWriter().println("<!DOCTYPE html>");
         response.getWriter().println("<html>");
         response.getWriter().println("<head>");
+
         response.getWriter().println("<meta charset='UTF-8'>");
-        response.getWriter().println("<title>Sistema de Entidades</title>");
+
+        response.getWriter().println(
+                "<title>Sistema de gestión de usuarios</title>"
+        );
+
+        // ==========================================
+        // ESTILOS
+        // ==========================================
 
         response.getWriter().println("<style>");
 
-        response.getWriter().println("body {");
-        response.getWriter().println("    font-family: Arial, sans-serif;");
-        response.getWriter().println("    margin: 30px;");
-        response.getWriter().println("}");
+        response.getWriter().println(
+                "body {"
+                + "font-family: Arial, sans-serif;"
+                + "margin: 0;"
+                + "padding: 0;"
+                + "background-color: #f4f4f4;"
+                + "}"
+        );
 
-        response.getWriter().println(".contenido {");
-        response.getWriter().println("    display: flex;");
-        response.getWriter().println("    width: 100%;");
-        response.getWriter().println("}");
+        response.getWriter().println(
+                ".contenedor {"
+                + "width: 90%;"
+                + "max-width: 1200px;"
+                + "margin: 40px auto;"
+                + "background-color: white;"
+                + "padding: 30px;"
+                + "}"
+        );
 
-        response.getWriter().println(".tabla {");
-        response.getWriter().println("    width: 50%;");
-        response.getWriter().println("}");
+        response.getWriter().println(
+                "h1 {"
+                + "text-align: center;"
+                + "margin-bottom: 40px;"
+                + "}"
+        );
 
-        response.getWriter().println(".integrantes {");
-        response.getWriter().println("    width: 50%;");
-        response.getWriter().println("    text-align: center;");
-        response.getWriter().println("    padding-top: 40px;");
-        response.getWriter().println("}");
+        response.getWriter().println(
+                ".contenido {"
+                + "display: flex;"
+                + "gap: 40px;"
+                + "align-items: flex-start;"
+                + "}"
+        );
 
-        response.getWriter().println("table {");
-        response.getWriter().println("    border-collapse: collapse;");
-        response.getWriter().println("}");
+        response.getWriter().println(
+                ".tabla {"
+                + "width: 60%;"
+                + "overflow-x: auto;"
+                + "}"
+        );
 
-        response.getWriter().println("th, td {");
-        response.getWriter().println("    border: 1px solid black;");
-        response.getWriter().println("    padding: 10px;");
-        response.getWriter().println("}");
+        response.getWriter().println(
+                ".integrantes {"
+                + "width: 40%;"
+                + "text-align: center;"
+                + "padding-top: 20px;"
+                + "}"
+        );
+
+        response.getWriter().println(
+                "table {"
+                + "border-collapse: collapse;"
+                + "width: 100%;"
+                + "}"
+        );
+
+        response.getWriter().println(
+                "th, td {"
+                + "border: 1px solid black;"
+                + "padding: 10px;"
+                + "text-align: left;"
+                + "}"
+        );
+
+        response.getWriter().println(
+                "th {"
+                + "background-color: #eaeaea;"
+                + "}"
+        );
+
+        response.getWriter().println(
+                ".volver {"
+                + "margin-top: 30px;"
+                + "}"
+        );
+
+        response.getWriter().println(
+                ".volver a {"
+                + "display: inline-block;"
+                + "padding: 10px 20px;"
+                + "background-color: #333;"
+                + "color: white;"
+                + "text-decoration: none;"
+                + "}"
+        );
 
         response.getWriter().println("</style>");
 
@@ -71,7 +136,15 @@ public class ConsultaServlet extends HttpServlet {
 
         response.getWriter().println("<body>");
 
-        response.getWriter().println("<h1>Sistema de Entidades</h1>");
+        response.getWriter().println("<div class='contenedor'>");
+
+        // ==========================================
+        // TÍTULO
+        // ==========================================
+
+        response.getWriter().println(
+                "<h1>Sistema de gestión de usuarios</h1>"
+        );
 
         response.getWriter().println("<div class='contenido'>");
 
@@ -244,7 +317,7 @@ public class ConsultaServlet extends HttpServlet {
         else {
 
             response.getWriter().println(
-                    "<p>Seleccionaste: " + tabla + "</p>"
+                    "<p>No se seleccionó una tabla válida.</p>"
             );
         }
 
@@ -256,7 +329,9 @@ public class ConsultaServlet extends HttpServlet {
 
         response.getWriter().println("<div class='integrantes'>");
 
-        response.getWriter().println("<h3>Integrantes:</h3>");
+        response.getWriter().println(
+                "<h2>Integrantes del equipo</h2>"
+        );
 
         response.getWriter().println(
                 "<p>Bautista Sanchez Victor Manuel</p>"
@@ -270,7 +345,22 @@ public class ConsultaServlet extends HttpServlet {
 
         response.getWriter().println("</div>");
 
+        // ==========================================
+        // BOTÓN VOLVER
+        // ==========================================
+
+        response.getWriter().println("<div class='volver'>");
+
+        response.getWriter().println(
+                "<a href='index.jsp'>← Volver</a>"
+        );
+
+        response.getWriter().println("</div>");
+
+        response.getWriter().println("</div>");
+
         response.getWriter().println("</body>");
+
         response.getWriter().println("</html>");
     }
 }

@@ -17,13 +17,13 @@
                       value="com.mysql.cj.jdbc.Driver"/>
 
             <property name="jakarta.persistence.jdbc.url"
-                      value="jdbc:mysql://localhost:3306/entidades"/>
+                      value="jdbc:mysql://mysql:3306/entidades"/>
 
             <property name="jakarta.persistence.jdbc.user"
                       value="root"/>
 
             <property name="jakarta.persistence.jdbc.password"
-                      value="12345"/>
+                      value="entidades123"/>
 
             <property name="hibernate.dialect"
                       value="org.hibernate.dialect.MySQLDialect"/>
