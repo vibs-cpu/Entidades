@@ -1,9 +1,10 @@
-name: Construir y publicar Docker
+name: Publicar Entidades en Docker Hub
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   docker:
