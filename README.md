@@ -1,25 +1,25 @@
 ## alumnos 
 Baustista Sanchez Victor Manuel
+De la Cruz Trinidad Candido Enrique
+# Sistema de Gestión de Usuarios (JPA + JSP + MySQL)
+--
+## 🚀 Descripción del Proyecto
+Este sistema está desarrollado en **Java** (utilizando Servlets, JSP y JPA para la gestión de la base de datos) y funciona como un sistema **CRUD** completo (Crear, Leer, Actualizar y Eliminar).
 
-### JPA+JSP Y SQLSERVER
-Sistema de gestión de usuarios
-Este sistema está desarrollado en Java (usando Servlets/JSP y JPA para la base de datos) y 
-funciona como un sistema CRUD (Crear, Leer, Actualizar y Eliminar).
+---
 
-Opciones del Menú ( index.jsp)
+## 🗂️ Opciones del Menú (`index.jsp`)
 
-Insertar usuario ( INSERTAR.jsp): Para registrar un usuario nuevo.
+* **Insertar usuario** (`INSERTAR.jsp`): Permite registrar un usuario nuevo.
+* **Consultar usuarios** (`LISTA.jsp`): Muestra la lista completa de todos los usuarios registrados.
+* **Buscar** (`BUSCAR.jsp`): Facilita encontrar a un usuario en específico.
+* **Actualizar usuario** (`ACTUALIZAR.jsp`): Permite modificar los datos de un usuario existente.
+* **Eliminar** (`eliminar.jsp`): Borra un registro de usuario.
+* **Salir** (`index.jsp`): Recarga la misma página principal.
 
-Consultar usuarios ( LISTA.jsp): Para ver la lista completa de todos los usuarios registrados.
+---
 
-Buscar ( BUSCAR.jsp): Para encontrar a un usuario en específico.
+## 📂 Estructura del Proyecto
 
-Actualizar usuario ( ACTUALIZAR.jsp): Para modificar los datos de un usuario existente.
-
-Eliminar ( eliminar.jsp): Para borrar un registro de usuario.
-
-Seleccionar usuario ('selectNombre.jsp'): Muestra solo los nombres de los usuarios
-Salir ( index.jsp): Recarga la misma página principal.
-Estructura del Proyecto
-index.jsp(La Vista / Menú): Interfaz web que muestra las opciones principales mediante enlaces.
-usuario.java(El Modelo): Clase mapeada con JPA ( @Entity) que representa la tabla usuarioen la base de datos (con sus atributos, constructores, Getters/Setters y consultas predefinidas).
+* **`index.jsp` (La Vista / Menú):** Interfaz web que muestra las opciones principales mediante enlaces.
+* **`usuario.java` (El Modelo):** Clase mapeada con JPA (`@Entity`) que representa la tabla `usuario` en la base de datos (con sus atributos, constructores, Getters/Setters y consultas predefinidas).
